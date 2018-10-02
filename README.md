@@ -38,3 +38,34 @@ sum = summation i (i=1 to n)
 
 The value of n that produces an overflow in this case is 65536.
 
+4.) n! with n as long and n! as float
+
+|n|n!|
+|----|----|
+|5|120|
+|8|40320|
+|10|3.6288e+06|
+|30|2.65253e+32|
+|34|2.95233e+38|
+|35|inf -> overflow!|
+
+In this case, overflow is indicated by a value of inf.
+The value of n that produces an overflow in this case is 35.
+
+5.) n! with n as long and n! as float
+
+|n|n!|
+|----|----|
+|5|120|
+|8|40320|
+|10|3.6288e+06|
+|30|2.65253e+32|
+|34|2.95233e+38|
+|35|103331e+40|
+|100|9.33262e+157|
+|150|5.71338e+262|
+|170|7.25742e+306|
+|171|inf -> overflow!|
+
+In this case, overflow is indicated by a value of inf.
+The value of n that produces an overflow in this case is 171.
