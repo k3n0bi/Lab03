@@ -99,8 +99,12 @@ Explaination:
 
 ----
 
-7.)
+7.) What is happening is that the float representations of the numbers are not exactly equal to the expected values. This is because fractional values can't be represented perfectly in binary, so some rounding ends up taking place at the outermost bits. This rounding error is magnified with each successive increment of the imperfect float value.
 
 ----
 
-8.)
+8.) By changing the variable i from question 7 to a double, the rounding error is 
+
+----
+
+Reference used for questions 7 and 8: [link text https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/]
