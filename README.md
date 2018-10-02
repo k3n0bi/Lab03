@@ -107,7 +107,7 @@ Various values of n and the result of the calculation
 |19|-1.78814e-07|-4.44089e-16|
 |20|1.19209e-07|2.22045e-16|
 
-Explaination: Floating point rounding error is the cause of the non-zero values. The reason the float and double results differ is due to the differences in the numbers of decimal places each can represent. Both data types have rounding errors, the rounding just happens at at different values of n.
+Explaination: Floating point rounding error is the cause of the non-zero values. The reason the float and double results differ is due to the differences in the numbers of decimal places each can represent. Both data types have rounding errors, the rounding just happens at at different values of n. It is important to note that in this case the error with the double data type is significantly less than that of the float.
 
 ----
 
