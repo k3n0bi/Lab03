@@ -87,11 +87,13 @@ Various values of n and the result of the calculation
 |n|summation-1 (float)|summation-1 (double)|
 |---|---|---|
 |2|0|0|
+|3|0|0|
 |4|0|0|
 |5|0|0|
 |6|0|-1.11022e-16|
+|7|0||
 |8|0||
-|9|1.19209e-7|
+|9|1.19209e-7||
 
 Explaination:
 
