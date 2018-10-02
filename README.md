@@ -107,4 +107,4 @@ Explaination:
 
 ----
 
-Reference used for questions 7 and 8: [link text https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/]
+Reference used for questions 7: [link text https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/]
