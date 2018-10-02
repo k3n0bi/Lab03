@@ -19,8 +19,12 @@ sum = summation i (i=1 to n)
 |255|32640|
 |256|-32640 -> overflow!|
 
+===
+
 2.) An overflow of the short data type results in the value changing sign. In this case, the sum flips from positive to negative.
 The value of n that produces an overflow in this case is 256.
+
+===
 
 3.) Various values of n and the sum using long type for n and the sum.
 sum = summation i (i=1 to n)
@@ -38,6 +42,8 @@ sum = summation i (i=1 to n)
 
 The value of n that produces an overflow in this case is 65536.
 
+===
+
 4.) n! with n as long and n! as float
 
 |n|n!|
@@ -51,6 +57,8 @@ The value of n that produces an overflow in this case is 65536.
 
 In this case, overflow is indicated by a value of inf.
 The value of n that produces an overflow in this case is 35.
+
+===
 
 5.) n! with n as long and n! as float
 
@@ -69,3 +77,7 @@ The value of n that produces an overflow in this case is 35.
 
 In this case, overflow is indicated by a value of inf.
 The value of n that produces an overflow in this case is 171.
+
+===
+
+6.)
