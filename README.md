@@ -107,7 +107,7 @@ Various values of n and the result of the calculation
 |19|-1.78814e-07|-4.44089e-16|
 |20|1.19209e-07|2.22045e-16|
 
-Explaination:
+Explaination: Floating point rounding error is the cause of the non-zero values. The reason the float and double results differ is due to the differences in the numbers of decimal places each can represent. Both data types have rounding errors, the rounding just happens at at different values of n.
 
 ----
 
@@ -115,7 +115,7 @@ Explaination:
 
 ----
 
-8.) By changing the variable i from question 7 to a double, the rounding error is 
+8.) By changing the variable i from question 7 to a double, the rounding error is minimized because of the much larger fractional value that a double can represent. If the interval were larger, the same problem with the float could happen with the double because the accumulation of rounding errors could eventually be significant enough to throw the calculation off.
 
 ----
 
