@@ -81,6 +81,7 @@ The value of n that produces an overflow in this case is 171.
 ----
 
 6.) The expected value of (summation 1/n)-1 where i=1 to n is zero.
+
 Various values of n and the result of the calculation
 
 |n|summation-1 (float)|summation-1 (double)|
@@ -91,3 +92,13 @@ Various values of n and the result of the calculation
 |6|0|-1.11022e-16|
 |8|0||
 |9|1.19209e-7|
+
+Explaination:
+
+----
+
+7.)
+
+----
+
+8.)
