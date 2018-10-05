@@ -111,12 +111,12 @@ Explaination: Floating point rounding error is the cause of the non-zero values.
 
 ----
 
-7.) What is happening is that the float representations of the numbers are not exactly equal to the expected values. This is because fractional values can't be represented perfectly in binary, so some rounding ends up taking place at the outermost bits. This rounding error is magnified with each successive increment of the imperfect float value.
+7.) What is happening is that the float representations of the numbers are not exactly equal to the expected values. This is because fractional values can't be represented perfectly in binary with a fixed number of bits, so some rounding ends up taking place at the outermost bits representing the smallest decimal place. This rounding error is magnified with each successive addition of the increment value. By forcing the display of more decimal places (as I did in my code) it is easy to see what happens. When the check to see if i<4.4, i ends up being just less than 4.4 when it "actually" should have been 4.4, so the loop is executed the "extra" time.
 
 ----
 
-8.) By changing the variable i from question 7 to a double, the rounding error is minimized because of the much larger fractional value that a double can represent. If the interval were larger, the same problem with the float could happen with the double because the accumulation of rounding errors could eventually be significant enough to throw the calculation off.
+8.) By changing the variable i from question 7 to a double, the rounding error is different because of the much larger fractional values that a double can represent. If the interval were larger, or the check on i were in a different location, the same problem with the float could happen with the double because the accumulation of rounding errors could eventually be significant enough to throw the calculation off. In this case when the check to see if i<4.4 happens, i ends up being just a little more than 4.4, so the loop is not executed the "extra" time as in the case of question 7.
 
 ----
 
-Reference used for questions 7: [link text https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/]
+Reference used for questions 7 and 8: [link text https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/]
