@@ -1,12 +1,13 @@
 // lab3-bhowe.cpp
 // Ben Howe
 // COSC 2030
-// 10/1/2018
+// 10/4/2018
 // Lab 03
 
 //Investigate numeric errors.
 
 #include <iostream>
+#include <iomanip>      // std::setprecision used to visualize output of questions 7 & 8
 using std::cout;
 using std::cin;
 using std::endl;
@@ -26,7 +27,7 @@ int main()
   {
     nOne = 0;
     sumOne = 0;
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nOne;
     for (int i = 1; i <= nOne; i++)
     {
@@ -58,7 +59,7 @@ int main()
   {
     nTwo = 0;
     sumTwo = 0;
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nTwo;
     for (int i = 1; i <= nTwo; i++)
     {
@@ -93,7 +94,7 @@ int main()
   while (nThree != -1)
   {
     
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nThree;
     
     if (nThree != -1)
@@ -124,7 +125,7 @@ int main()
 
   while (nFour != -1)
   {
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nFour;
    
     if (nFour != -1)
@@ -156,7 +157,7 @@ int main()
 
   while (nA != -1)
   {
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nA;
 
     if (nA != -1)
@@ -175,7 +176,7 @@ int main()
 
   while (nB != -1)
   {
-    cout << "Enter a value for n (-1 to skip): ";
+    cout << "Enter a value for n (-1 to skip to next question): ";
     cin >> nB;
 
     if (nB != -1)
@@ -185,18 +186,24 @@ int main()
     }
   }
 
+   
   // Question 7
+  cout << std::setprecision(15); //done to highlight the rounding error asociated with decimal values
   cout << "=====================================" << endl;
   cout << "7.) Look at what's happening" << endl;
   for (float i = 3.4; i < 4.4; i += 0.2)
+      //for (float i = 3.4; i < 4.6; i += 0.2)
+      // I did this so the program would display the value of i when the "i<4.4" check is done in the regular program 
   {
     cout << "i = " << i << endl;
   }
-
   // Question 8
+  cout << std::setprecision(18); //done to highlight the rounding error asociated with decimal values
   cout << "=====================================" << endl;
   cout << "8.) Look at what's happening" << endl;
   for (double i = 3.4; i < 4.4; i += 0.2)
+    //for (double i = 3.4; i < 4.6; i += 0.2)
+    // I did this so the program would display the value of i when the "i<4.4" check is done in the regular program
   {
     cout << "i = " << i << endl;
   }
@@ -204,6 +211,7 @@ int main()
   return 0;
 }
 
+// Functions
 
 float f_factorial(long n)
   {
