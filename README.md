@@ -84,7 +84,7 @@ The value of n that produces an overflow in this case is 171.
 
 Various values of n and the result of the calculation
 
-|n|summation-1 (float)|summation-1 (double)|
+|n|(summation 1/n)-1 (float)|(summation 1/n)-1 (double)|
 |---|---|---|
 |1|0|0|
 |2|0|0|
