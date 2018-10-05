@@ -1,7 +1,7 @@
 Ben Howe
 Lab03
 COSC 2030
-10/1/2018
+10/4/2018
 
 1.) Various values of n and the sum using short type for n and the sum.
 sum = summation i (i=1 to n)
