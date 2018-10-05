@@ -22,7 +22,7 @@ sum = summation i (i=1 to n)
 ----
 
 2.) An overflow of the short data type results in the value changing sign. In this case, the sum flips from positive to negative.
-The value of n that produces an overflow in this case is 256.
+The value of n that produces an overflow in this case is 256. Another good check is to see if when adding a positive number that the restult is greater than original number.
 
 ----
 
